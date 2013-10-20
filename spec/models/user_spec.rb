@@ -2,7 +2,10 @@ require 'spec_helper'
 
 describe User, '#todos' do 
 	it 'returns only todos for that user' do
+		Todo.create(description: 'Buy a book')
 		user = User.new('person@example.com')
+		expect(user.todos.count).to eq 1
+		expect(user.todos.first.description).to eq 'Buy a book'
 		expect(user.todos).to eq Todo.all
 	end
 end
