@@ -6,7 +6,7 @@ class User
 	end
 
 	def todos
-		Todo.all
+		Todo.where(owner_email: email)
 	end
 
 end
