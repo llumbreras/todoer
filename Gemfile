@@ -14,6 +14,10 @@ group :test, :development do
     gem 'capybara', '~> 1.1.4'
 end
 
+group :test do
+  gem 'factory_girl_rails', '~> 4.0'
+end
+
 gem 'therubyracer', platforms: :ruby
 gem 'jquery-rails'
 gem 'turbolinks'
