@@ -11,7 +11,7 @@ feature 'Manage todos' do
 	end
 
 	scenario 'View only my todo' do
-		Todo.create(description:'Buy a pen', owner_email:'not_me@example.com')
+		create(:todo, description:'Buy a pen', owner_email:'not_me@example.com')
 
 		sign_in_as 'me@example.com'
 

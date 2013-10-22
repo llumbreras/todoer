@@ -37,6 +37,6 @@ RSpec.configure do |config|
   config.order = "random"
 
   # For the Factory_Girl_Rails Gem
-  config.include = FactoryGirls::Syntax::Methods
+  config.include FactoryGirl::Syntax::Methods
   
 end
